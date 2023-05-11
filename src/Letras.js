@@ -15,7 +15,10 @@ export default function Letras(props) {
         arrayPalavra.forEach((elemento, indice)=>{
             if(letra == elemento){
                 misteryPalavra[indice]= letra;
-                setArrayPalavra(misteryPalavra);
+                setMisteryPalavra(misteryPalavra);
+                setPalavra(misteryPalavra.join(''));
+
+
             }
         });
     }

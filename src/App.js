@@ -7,7 +7,7 @@ import { useState } from "react";
 
 function App() {
   const [palavra, setPalavra ]= useState('');
-  const [arrayPalavra, setArrayPalavra] = useState('');
+  const [arrayPalavra, setArrayPalavra] = useState([]);
   const [misteryPalavra, setMisteryPalavra] = useState('');
   console.log(palavras);
 
