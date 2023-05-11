@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+}
+
+/* div{
+  border: 1px solid black;
+} */
+.App{
+  padding: 60px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.Jogo{
+  width: 100%;
+
+
+  display: flex;
+  justify-content: space-between;
+}
+.imgForca{
+  width: 400px;
+  height: 470px;
+}
+.botaoInicio{
+  width: 200px;
+  height: 60px;
+}
+.contBotaoPalavra{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: end;
+
+  margin: 30px 10px;
+
+}
+.letra{
+  width: 40px;
+  height: 40px;
+  margin: 6px;
+}
+.Letras{
+  width: 690px;
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-top: 70px;
+}
+h1{
+  font-size: 50px;
+  color: #ff0000;
+}

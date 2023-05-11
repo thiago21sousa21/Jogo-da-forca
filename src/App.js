@@ -1,23 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import Jogo from "./Jogo";
+import Letras from "./Letras";
+import palavras from "./palavras";
+import { useState } from "react";
+
+
 
 function App() {
+  const [palavra, setPalavra ]= useState('');
+  const [arrayPalavra, setArrayPalavra] = useState('');
+  const [misteryPalavra, setMisteryPalavra] = useState('');
+  console.log(palavras);
+
+  const [botao, setBotao] = useState(false);
+
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Jogo 
+          palavras={palavras}
+          palavra={palavra}
+          setPalavra={setPalavra}
+          arrayPalavra={arrayPalavra}
+          setArrayPalavra={setArrayPalavra}
+          misteryPalavra={misteryPalavra}
+          setMisteryPalavra={setMisteryPalavra}
+      />
+      <Letras botao={botao} setBotao={setBotao}
+          palavras={palavras}
+          palavra={palavra}
+          setPalavra={setPalavra}
+          arrayPalavra={arrayPalavra}
+          setArrayPalavra={setArrayPalavra}
+          misteryPalavra={misteryPalavra}
+          setMisteryPalavra={setMisteryPalavra}
+      />
     </div>
   );
 }
