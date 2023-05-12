@@ -20,7 +20,7 @@ let {palavras,
 }=props;
 
   function sortearPalavra (){  
-    setBotao(false); 
+    setBotao(botao.fill(false)); 
     cont=0;
     setCont(cont);
     palavras.sort(()=> 0.5-Math.random());

@@ -12,8 +12,10 @@ export default function Letras(props) {
     function verificarLetra(letra, ind){
 
         let bin = 0;
-        const newBotao = [...botao];
-        newBotao[ind]=true;
+
+        
+        const newBotao = [...botao]; 
+        newBotao[ind] = true;
         setBotao(newBotao);
 
 
@@ -38,13 +40,13 @@ export default function Letras(props) {
         if(cont>=6){
             alert(' voce perdeu :(');
             setPalavra('');
-            setBotao(true);
+            setBotao(botao.fill(true));
         }
 
         if(misteryPalavra.join('') === arrayPalavra.join('')){
             alert('parabens voce venceu!');
             setPalavra('');
-            setBotao(true);
+            setBotao(botao.fill(true));
         }
 
 
