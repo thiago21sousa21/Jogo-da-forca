@@ -9,9 +9,8 @@ function App() {
   const [palavra, setPalavra ]= useState('');
   const [arrayPalavra, setArrayPalavra] = useState([]);
   const [misteryPalavra, setMisteryPalavra] = useState('');
-  console.log(palavras);
-
-  const [botao, setBotao] = useState(false);
+  let [cont, setCont]= useState(0);
+  const [botao, setBotao] = useState(Array(26).fill(true));
 
 
 
@@ -25,6 +24,9 @@ function App() {
           setArrayPalavra={setArrayPalavra}
           misteryPalavra={misteryPalavra}
           setMisteryPalavra={setMisteryPalavra}
+          cont={cont}
+          setCont={setCont}
+          botao={botao} setBotao={setBotao}
       />
       <Letras botao={botao} setBotao={setBotao}
           palavras={palavras}
@@ -34,6 +36,9 @@ function App() {
           setArrayPalavra={setArrayPalavra}
           misteryPalavra={misteryPalavra}
           setMisteryPalavra={setMisteryPalavra}
+          cont={cont}
+          setCont={setCont}
+
       />
     </div>
   );
