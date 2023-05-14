@@ -11,6 +11,7 @@ function App() {
   const [misteryPalavra, setMisteryPalavra] = useState('');
   let [cont, setCont]= useState(0);
   const [botao, setBotao] = useState(Array(26).fill(true));
+  const[cor, setCor] = useState('preto');
 
 
 
@@ -27,6 +28,7 @@ function App() {
           cont={cont}
           setCont={setCont}
           botao={botao} setBotao={setBotao}
+          cor={cor} setCor={setCor}
       />
       <Letras botao={botao} setBotao={setBotao}
           palavras={palavras}
@@ -38,6 +40,7 @@ function App() {
           setMisteryPalavra={setMisteryPalavra}
           cont={cont}
           setCont={setCont}
+          setCor={setCor}
 
       />
     </div>

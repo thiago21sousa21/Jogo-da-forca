@@ -16,10 +16,12 @@ let {palavras,
   arrayPalavra, setArrayPalavra,
   misteryPalavra, setMisteryPalavra,
   cont, setCont,
-  botao, setBotao
+  botao, setBotao,
+  cor, setCor
 }=props;
 
   function sortearPalavra (){  
+    setCor('preto');
     setBotao(botao.fill(false)); 
     cont=0;
     setCont(cont);
@@ -34,10 +36,10 @@ let {palavras,
 
     return(
       <div className="Jogo">
-        <img className="imgForca" src={arrayImagens[cont]}/>
+        <img data-test="game-image" className="imgForca" src={arrayImagens[cont]}/>
         <div className="contBotaoPalavra">
-          <button onClick={sortearPalavra}  className="botaoInicio">Escolher Palavra</button>
-          <div className="palavra"><h1>{palavra}</h1></div>
+          <button data-test="choose-word" onClick={sortearPalavra}  className="botaoInicio">Escolher Palavra</button>
+          <div className="palavra"><h1 data-test="word" className={cor}>{palavra}</h1></div>
         </div>
     </div>
     );

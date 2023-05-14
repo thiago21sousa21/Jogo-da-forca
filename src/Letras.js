@@ -7,7 +7,8 @@ export default function Letras(props) {
         palavra, setPalavra, 
         arrayPalavra, setArrayPalavra,
         misteryPalavra, setMisteryPalavra,
-        cont, setCont} = props;
+        cont, setCont,
+        setCor} = props;
 
     function verificarLetra(letra, ind){
 
@@ -38,14 +39,13 @@ export default function Letras(props) {
         }
 
         if(cont>=6){
-            alert(' voce perdeu :(');
-            setPalavra('');
+            setCor('vermelho');
             setBotao(botao.fill(true));
+            setPalavra(palavras[0]);
         }
 
         if(misteryPalavra.join('') === arrayPalavra.join('')){
-            alert('parabens voce venceu!');
-            setPalavra('');
+            setCor('verde');
             setBotao(botao.fill(true));
         }
 
@@ -55,7 +55,7 @@ export default function Letras(props) {
 
     return (
         <div className="Letras">
-            {alfabeto.map( (i, j) => <button disabled={botao[j]} key={i} onClick={()=>verificarLetra(i, j)} className="letra"> {i} </button>)}
+            {alfabeto.map( (i, j) => <button data-test="letter" disabled={botao[j]} key={i} onClick={()=>verificarLetra(i, j)} className="letra"> {i} </button>)}
         </div>
     );
 }
