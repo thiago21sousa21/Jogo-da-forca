@@ -31,7 +31,7 @@
   border-radius: 8px;
   color: #ffffff;
   border: none;
-  
+  cursor: pointer;
 
 }
 .contBotaoPalavra{
@@ -48,7 +48,7 @@
   height: 40px;
   margin: 6px;
   border-radius: 3px;
-
+  cursor: pointer;
 }
 .letra:enabled{
   background-color: #E1ECF4;
