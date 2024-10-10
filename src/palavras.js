@@ -16,7 +16,7 @@ const palavras = [
     "pato", "polvo", "povoar", "pano", "princesa", "pizza", "patroa",
     "queijo", "quitanda", "quinta", "quantia", "quarentena", "quadrilha", "quaresma", "quartzo", "quebrar",
     "risada", "rio", "remar", "rato", "racional", "rainha", "radioatividade", "raiz", "raiva", "rachadura",
-    "salada", "salamandra", "sacola", "siri", "sabre", "sucarose", "sabedoria", "sacerdote",
+    "salada", "salamandra", "sacola", "siri", "sabre", "sacarose", "sabedoria", "sacerdote",
     "tatu", "tabacaria", "taberneiro", "torrada", "tamanho", "tatuagem", "trem",
     "uva", "universo", "unanimidade", "ubuntu", "universidade", "urso", "uivar", "unir",
     "vela", "valeta", "vacilo", "valor", "vagem", "vadiagem", "vaca", "valentia", "vidro", "valsa",
