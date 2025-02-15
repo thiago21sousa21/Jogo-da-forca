@@ -1,6 +1,6 @@
-import Jogo from "./Jogo";
-import Letras from "./Letras";
-import palavras from "./palavras";
+import Jogo from "../Jogo/Jogo";
+import Letras from "../Letras/Letras";
+import palavras from "../Palavras/palavras";
 import { useState } from "react";
 
 

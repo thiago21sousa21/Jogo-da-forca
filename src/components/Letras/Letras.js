@@ -1,11 +1,11 @@
-import { useState } from "react";
+
 
 export default function Letras(props) {
     const alfabeto = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
     let {botao, setBotao,
         palavras, 
-        palavra, setPalavra, 
-        arrayPalavra, setArrayPalavra,
+        setPalavra, 
+        arrayPalavra,
         misteryPalavra, setMisteryPalavra,
         cont, setCont,
         setCor} = props;
@@ -21,7 +21,7 @@ export default function Letras(props) {
 
 
         arrayPalavra.forEach((elemento, indice)=>{
-            if(letra == elemento){
+            if(letra === elemento){
 
                 misteryPalavra[indice]= letra;
                 setMisteryPalavra(misteryPalavra);
@@ -31,7 +31,7 @@ export default function Letras(props) {
             }
         });
 
-        if(bin == 0){
+        if(bin === 0){
             cont++;
             setCont(cont);
         }else{
